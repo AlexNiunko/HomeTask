@@ -61,6 +61,47 @@ public class ArrayService {
         }
         return countNegative;
     }
+    public void sortArraySelection(Array array) throws ArrayException {
+        for (int i = 0; i < array.sizeArray(); i++) {
+            for (int j = i; j <array.sizeArray() ; j++) {
+                if (array.arrayGetElement(i)>array.arrayGetElement(j)){
+                    int temp=array.arrayGetElement(j);
+                    array.setElement(j,array.arrayGetElement(i));
+                    array.setElement(i,temp);
+                }
+            }
+        }
+    }
+    public void sortArrayBubble(Array array) throws ArrayException {
+        boolean needIteration=true;
+        while (needIteration){
+            needIteration=false;
+            for (int i = 1; i < array.sizeArray(); i++) {
+                if (array.arrayGetElement(i)<array.arrayGetElement(i-1)){
+                    int temp=array.arrayGetElement(i);
+                    array.setElement(i,array.arrayGetElement(i-1));
+                    array.setElement(i-1,temp);
+                    needIteration=true;
+                }
+            }
+        }
+    }
+    public void sortArrayInsertion(Array array) throws ArrayException {
+        for (int i = 0; i < array.sizeArray(); i++) {
+            int value=array.arrayGetElement(i);
+            int j=i-1;
+            for (; j >=0 ; j--) {
+                if (value<array.arrayGetElement(j)){
+                    array.setElement(j+1,j);
+                } else {
+                    break;
+                }
+            }
+            array.setElement(j+1,value);
+        }
+    }
+
+
 
 
 }

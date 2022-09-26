@@ -7,9 +7,14 @@ import java.util.Arrays;
 public class Array {
     private int [] Arr;
 
+    public Array(){
+        super();
+    }
+
     public Array(int[] arr) {
         Arr = arr;
     }
+
     public Array(int length) throws ArrayException {
         if (length<0){
             throw new ArrayException("Отрицательная длинна");
