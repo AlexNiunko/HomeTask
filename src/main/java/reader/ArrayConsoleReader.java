@@ -5,7 +5,7 @@ import entity.Array;
 import java.util.Scanner;
 
 public class ArrayConsoleReader {
-    public static final String SPACE_DELMETER="\\s+";
+    public static final String SPACE_DELIMETER="\\s+";
     public static final String NUMBER_EXPRESSION="\\d+";
 
     public Array readFromConsole()  {
@@ -19,7 +19,7 @@ public class ArrayConsoleReader {
 
 
     public int[] numberTostring(String str){
-        String [] strNumbers=str.split(SPACE_DELMETER);
+        String [] strNumbers=str.split(SPACE_DELIMETER);
         int countItem=0;
         for (int i = 0; i < strNumbers.length; i++) {
             if (strNumbers[i].matches(NUMBER_EXPRESSION)){
