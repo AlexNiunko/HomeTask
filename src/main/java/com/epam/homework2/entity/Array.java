@@ -1,6 +1,6 @@
-package entity;
+package com.epam.homework2.entity;
 
-import exception.ArrayException;
+import com.epam.homework2.exception.ArrayException;
 
 import java.util.Arrays;
 
@@ -17,7 +17,7 @@ public class Array {
 
     public Array(int length) throws ArrayException {
         if (length<0){
-            throw new ArrayException("Negative length");
+            throw new ArrayException("Отрицательная длинна");
         }
         this.Arr=new int[length];
     }

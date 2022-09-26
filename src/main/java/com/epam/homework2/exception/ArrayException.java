@@ -1,4 +1,4 @@
-package exception;
+package com.epam.homework2.exception;
 
 public class ArrayException extends Exception {
     public ArrayException(){
