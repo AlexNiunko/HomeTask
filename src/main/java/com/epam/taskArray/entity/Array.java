@@ -1,6 +1,6 @@
-package com.epam.homework2.entity;
+package com.epam.taskArray.entity;
 
-import com.epam.homework2.exception.ArrayException;
+import com.epam.taskArray.exception.ArrayException;
 
 import java.util.Arrays;
 

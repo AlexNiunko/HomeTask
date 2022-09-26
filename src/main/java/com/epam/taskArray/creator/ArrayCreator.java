@@ -1,7 +1,7 @@
-package com.epam.homework2.creator;
+package com.epam.taskArray.creator;
 
-import com.epam.homework2.entity.Array;
-import com.epam.homework2.exception.ArrayException;
+import com.epam.taskArray.entity.Array;
+import com.epam.taskArray.exception.ArrayException;
 
 public class ArrayCreator {
     public void fillRandomized(Array array,int minValue,int maxValue) throws ArrayException {

@@ -1,7 +1,7 @@
-package com.epam.homework2.service;
+package com.epam.taskArray.service;
 
-import com.epam.homework2.entity.Array;
-import com.epam.homework2.exception.ArrayException;
+import com.epam.taskArray.entity.Array;
+import com.epam.taskArray.exception.ArrayException;
 
 
 public class ArrayService {

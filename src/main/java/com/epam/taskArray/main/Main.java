@@ -1,8 +1,8 @@
-package com.epam.homework2.main;
+package com.epam.taskArray.main;
 
-import com.epam.homework2.entity.Array;
-import com.epam.homework2.exception.ArrayException;
-import com.epam.homework2.reader.ArrayFileReader;
+import com.epam.taskArray.entity.Array;
+import com.epam.taskArray.exception.ArrayException;
+import com.epam.taskArray.reader.ArrayFileReader;
 
 public class Main {
     public static void main(String[] args) throws ArrayException {
