@@ -1,6 +1,6 @@
-package reader;
+package com.epam.homework2.reader;
 
-import entity.Array;
+import com.epam.homework2.entity.Array;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
