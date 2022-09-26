@@ -17,7 +17,7 @@ public class Array {
 
     public Array(int length) throws ArrayException {
         if (length<0){
-            throw new ArrayException("Отрицательная длинна");
+            throw new ArrayException("Negative length");
         }
         this.Arr=new int[length];
     }
