@@ -1,25 +1,20 @@
 package com.epam.taskArray.reader;
 
-import com.epam.taskArray.entity.Array;
+import com.epam.taskArray.exception.ArrayException;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 public class ArrayFileReader {
-    public Array readFromFile()  {
-        String str=null;
-        try {
-            BufferedReader bufferedReader = new BufferedReader(new FileReader("readme.txt"));
+    public String readFromFile(String pathOrFileName) throws ArrayException {
+       String str="";
+        try(FileReader fileReader=new FileReader(pathOrFileName);
+            BufferedReader bufferedReader = new BufferedReader(fileReader)) {
             str=bufferedReader.readLine();
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            throw new ArrayException("This file does not exist");
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new ArrayException("Unable to read this file");
         }
-        ArrayConsoleReader arrayConsoleReader=new ArrayConsoleReader();
-        Array array=new Array(arrayConsoleReader.numberTostring(str));
-        return array;
+        return str;
     }
 }

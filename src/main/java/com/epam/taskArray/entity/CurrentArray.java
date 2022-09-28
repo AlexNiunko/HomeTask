@@ -4,48 +4,48 @@ import com.epam.taskArray.exception.ArrayException;
 
 import java.util.Arrays;
 
-public class Array {
-    private int [] Arr;
+public class CurrentArray {
+    private int [] arr;
 
-    public Array(){
+    public CurrentArray(){
         super();
     }
 
-    public Array(int[] arr) {
-        Arr = arr;
+    public CurrentArray(int[] arr) {
+        arr = arr;
     }
 
-    public Array(int length) throws ArrayException {
+    public CurrentArray(int length) throws ArrayException {
         if (length<0){
-            throw new ArrayException("Отрицательная длинна");
+            throw new ArrayException("Negative length");
         }
-        this.Arr=new int[length];
+        this.arr=new int[length];
     }
     public int arrayGetElement(int index) throws ArrayException {
         if (cheackRange(index)) {
-            return Arr[index];
+            return arr[index];
         } else {
             throw new ArrayException("Non-existent element");
         }
     }
     public int sizeArray(){
-        return Arr.length;
+        return arr.length;
     }
     public int[] getArr() {
-        return Arr;
+        return arr;
     }
     public void setArr(int[] arr) {
-        Arr = arr;
+        arr = arr;
     }
     public void setElement(int index,int value) throws ArrayException {
         if (cheackRange(index)) {
-            this.Arr[index] = value;
+            this.arr[index] = value;
         } else {
             throw new ArrayException("Non-existent element");
         }
     }
     public boolean cheackRange(int i){
-        return  (i>=0 && i<Arr.length);
+        return  (i>=0 && i<arr.length);
     }
 
 
@@ -54,20 +54,21 @@ public class Array {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Array array = (Array) o;
+        CurrentArray that = (CurrentArray) o;
 
-        return Arrays.equals(Arr, array.Arr);
+        return Arrays.equals(arr, that.arr);
     }
 
     @Override
     public int hashCode() {
-        return Arrays.hashCode(Arr);
+        return Arrays.hashCode(arr);
     }
 
     @Override
     public String toString() {
-        return "Array{" +
-                "Arr=" + Arrays.toString(Arr) +
-                '}';
+        final StringBuilder sb = new StringBuilder("CurrentArray{");
+        sb.append("arr=").append(Arrays.toString(arr));
+        sb.append('}');
+        return sb.toString();
     }
 }

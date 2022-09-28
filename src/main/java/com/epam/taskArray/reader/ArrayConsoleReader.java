@@ -1,38 +1,16 @@
 package com.epam.taskArray.reader;
 
-import com.epam.taskArray.entity.Array;
-
 import java.util.Scanner;
 
 public class ArrayConsoleReader {
-    public static final String SPACE_DELIMETER="\\s+";
-    public static final String NUMBER_EXPRESSION="\\d+";
+    public static final String SPACE_DELIMETER = "\\s+";
+    public static final String NUMBER_EXPRESSION = "\\d+";
 
-    public Array readFromConsole()  {
+    public String readFromConsole() {
         String str;
-        try(Scanner scanner = new Scanner(System.in);) {
+        try (Scanner scanner = new Scanner(System.in)) {
             str = scanner.nextLine();
         }
-        Array array=new Array(numberTostring(str));
-        return array;
-    }
-
-
-    public int[] numberTostring(String str){
-        String [] strNumbers=str.split(SPACE_DELIMETER);
-        int countItem=0;
-        for (int i = 0; i < strNumbers.length; i++) {
-            if (strNumbers[i].matches(NUMBER_EXPRESSION)){
-                countItem++;
-            }
-        }
-        int [] numbers=new int[countItem];
-        for (int i = 0,j=0; i < strNumbers.length; i++) {
-            if (strNumbers[i].matches(NUMBER_EXPRESSION)){
-                numbers[j]=Integer.parseInt(strNumbers[i]);
-                j++;
-            }
-        }
-        return numbers;
+        return str;
     }
 }
