@@ -1,0 +1,5 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¦¾î˜ùÿÿÿÿ
+t	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(îÔ¬ûÿÿÿÿ
+g
+java:S5998"LRefactor this repetition that can lead to a stack overflow for large inputs.(îÔ¬ûÿÿÿÿ
