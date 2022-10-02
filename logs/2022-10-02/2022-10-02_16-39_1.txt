@@ -1,0 +1,12 @@
+2022-09-28 19:43:37 [main] INFO  com.epam.taskArray.main.ArrayMain [[main]] - start program
+2022-09-28 19:55:40 [main] INFO  com.epam.taskArray.main.ArrayMain [[main]] - start program
+2022-09-28 20:21:48 [main] INFO  com.epam.taskArray.entity.asg [[multten]] - in method
+2022-09-28 20:22:37 [main] INFO  com.epam.taskArray.entity.asg [[multten]] - in method
+2022-09-28 20:23:05 [main] INFO  com.epam.taskArray.entity.asg [[multten]] - in method
+2022-09-28 20:23:23 [main] INFO  com.epam.taskArray.entity.asg [[multten]] - in method
+2022-09-28 20:39:18 [main] INFO  com.epam.taskArray.entity.asg [[multten]] - in method
+2022-09-28 20:40:02 [main] INFO  com.epam.taskArray.entity.asg [[multten]] - in method
+2022-09-28 20:40:18 [main] INFO  com.epam.taskArray.entity.asg [[multten]] - in method
+2022-10-02 15:20:16 [main] INFO  com.epam.taskArray.main.ArrayMain [[main]] - start program
+2022-10-02 16:29:39 [main] INFO  com.epam.taskArray.main.ArrayMain [[main]] - start program
+2022-10-02 16:34:25 [main] INFO  com.epam.taskArray.main.ArrayMain [[main]] - start program

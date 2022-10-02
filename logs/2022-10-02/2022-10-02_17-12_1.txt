@@ -1,0 +1,8 @@
+2022-10-02 16:39:28 [main] INFO  com.epam.taskArray.service.ArrayService [[searchMaxElement]] - max element is 98
+2022-10-02 16:56:25 [main] INFO  com.epam.taskArray.service.ArrayService [[searchMaxElement]] - the maximum element of a given array is 98
+2022-10-02 16:56:43 [main] INFO  com.epam.taskArray.service.ArrayService [[searchMaxElement]] - the maximum element of a given array is 98
+2022-10-02 17:12:00 [main] INFO  com.epam.taskArray.service.ArrayService [[sumElementsArray]] - the sum of the elements of a given array is equal to 15
+2022-10-02 17:12:00 [main] INFO  com.epam.taskArray.service.ArrayService [[sumElementsArray]] - the sum of the elements of a given array is equal to -5
+2022-10-02 17:12:00 [main] INFO  com.epam.taskArray.service.ArrayService [[sumElementsArray]] - the sum of the elements of a given array is equal to -3
+2022-10-02 17:12:00 [main] INFO  com.epam.taskArray.service.ArrayService [[searchMaxElement]] - the maximum element of a given array is 98
+2022-10-02 17:12:00 [main] INFO  com.epam.taskArray.service.ArrayService [[searchMinElement]] - the minimum element of a given array is 1

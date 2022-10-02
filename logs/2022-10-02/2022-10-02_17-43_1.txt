@@ -1,0 +1,9 @@
+2022-10-02 17:24:38 [main] INFO  com.epam.taskArray.service.ArrayService [[sortArrayBubble]] - this array is sorted by the bubble method
+2022-10-02 17:26:56 [main] INFO  com.epam.taskArray.main.ArrayMain [[main]] - start program
+2022-10-02 17:26:56 [main] INFO  com.epam.taskArray.service.ArrayService [[sortArrayBubble]] - this array is sorted by the bubble method
+2022-10-02 17:35:17 [main] INFO  com.epam.taskArray.service.ArrayService [[sortArraySelection]] - this array is sorted by the selection method
+2022-10-02 17:35:52 [main] INFO  com.epam.taskArray.service.ArrayService [[sortArrayInsertion]] - this array is sorted by the insertion method
+2022-10-02 17:37:10 [main] INFO  com.epam.taskArray.main.ArrayMain [[main]] - start program
+2022-10-02 17:37:10 [main] INFO  com.epam.taskArray.service.ArrayService [[sortArrayInsertion]] - this array is sorted by the insertion method
+2022-10-02 17:41:57 [main] INFO  com.epam.taskArray.main.ArrayMain [[main]] - start program
+2022-10-02 17:41:57 [main] INFO  com.epam.taskArray.service.ArrayService [[sortArrayInsertion]] - this array is sorted by the insertion method

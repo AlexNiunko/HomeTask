@@ -1,0 +1,10 @@
+2022-10-02 17:43:49 [main] INFO  com.epam.taskArray.main.ArrayMain [[main]] - start program
+2022-10-02 17:43:49 [main] INFO  com.epam.taskArray.service.ArrayService [[sortArrayInsertion]] - this array is sorted by the insertion method
+2022-10-02 17:44:30 [main] INFO  com.epam.taskArray.service.ArrayService [[sortArrayInsertion]] - this array is sorted by the insertion method
+2022-10-02 20:48:51 [main] INFO  com.epam.taskArray.main.ArrayMain [[main]] - start program
+2022-10-02 20:49:43 [main] INFO  com.epam.taskArray.main.ArrayMain [[main]] - start program
+2022-10-02 20:51:29 [main] INFO  com.epam.taskArray.main.ArrayMain [[main]] - start program
+2022-10-02 20:53:48 [main] INFO  com.epam.taskArray.main.ArrayMain [[main]] - start program
+2022-10-02 20:56:13 [main] INFO  com.epam.taskArray.main.ArrayMain [[main]] - start program
+2022-10-02 20:58:11 [main] INFO  com.epam.taskArray.main.ArrayMain [[main]] - start program
+2022-10-02 21:07:26 [main] INFO  com.epam.taskArray.main.ArrayMain [[main]] - start program
