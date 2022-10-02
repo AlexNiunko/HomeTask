@@ -5,47 +5,54 @@ import com.epam.taskArray.exception.ArrayException;
 import java.util.Arrays;
 
 public class CurrentArray {
-    private int [] arr;
+    private int[] arr;
 
-    public CurrentArray(){
+    public CurrentArray() {
         super();
     }
 
-    public CurrentArray(int[] arr) {
-        arr = arr;
+    public CurrentArray(int[] arr) throws ArrayException {
+        if (arr.length==0){
+            throw new ArrayException("Array null");
+        }
+        this.arr = arr;
     }
 
     public CurrentArray(int length) throws ArrayException {
-        if (length<0){
+        if (length < 0) {
             throw new ArrayException("Negative length");
         }
-        this.arr=new int[length];
+        this.arr = new int[length];
     }
+
     public int arrayGetElement(int index) throws ArrayException {
-        if (cheackRange(index)) {
-            return arr[index];
-        } else {
+        if (!(cheackRange(index))) {
             throw new ArrayException("Non-existent element");
         }
+        return arr[index];
     }
-    public int sizeArray(){
+
+    public int sizeArray() {
         return arr.length;
     }
+
     public int[] getArr() {
         return arr;
     }
+
     public void setArr(int[] arr) {
-        arr = arr;
+        this.arr = arr;
     }
-    public void setElement(int index,int value) throws ArrayException {
-        if (cheackRange(index)) {
-            this.arr[index] = value;
-        } else {
+
+    public void setElement(int index, int value) throws ArrayException {
+        if ( !(cheackRange(index)) ) {
             throw new ArrayException("Non-existent element");
         }
+        this.arr[index] = value;
     }
-    public boolean cheackRange(int i){
-        return  (i>=0 && i<arr.length);
+
+    private boolean cheackRange(int i) {
+        return (i >= 0 && i < arr.length);
     }
 
 
