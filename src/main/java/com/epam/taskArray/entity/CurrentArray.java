@@ -6,23 +6,26 @@ import java.util.Arrays;
 
 public class CurrentArray {
     private int[] arr;
+    private String id;
 
     public CurrentArray() {
         super();
     }
 
-    public CurrentArray(int[] arr) throws ArrayException {
+    public CurrentArray(int[] arr,String id) throws ArrayException {
         if (arr.length==0){
             throw new ArrayException("Array null");
         }
         this.arr = arr;
+        this.id=id;
     }
 
-    public CurrentArray(int length) throws ArrayException {
+    public CurrentArray(int length,String id) throws ArrayException {
         if (length < 0) {
             throw new ArrayException("Negative length");
         }
         this.arr = new int[length];
+        this.id=id;
     }
 
     public int arrayGetElement(int index) throws ArrayException {
@@ -75,7 +78,9 @@ public class CurrentArray {
     public String toString() {
         final StringBuilder sb = new StringBuilder("CurrentArray{");
         sb.append("arr=").append(Arrays.toString(arr));
+        sb.append(", id='").append(id).append('\'');
         sb.append('}');
+        sb.append("\n");
         return sb.toString();
     }
 }
