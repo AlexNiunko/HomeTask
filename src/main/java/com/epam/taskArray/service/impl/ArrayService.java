@@ -1,13 +1,15 @@
-package com.epam.taskArray.service;
+package com.epam.taskArray.service.impl;
 
 import com.epam.taskArray.entity.CurrentArray;
 import com.epam.taskArray.exception.ArrayException;
+import com.epam.taskArray.service.ArrayServiceInterface;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class ArrayService {
+public class ArrayService implements ArrayServiceInterface {
     static final Logger logger= LogManager.getLogger();
+    @Override
     public int searchMinElement(CurrentArray currentArray) {
         int min = Integer.MAX_VALUE;
         try {
@@ -23,6 +25,7 @@ public class ArrayService {
         return min;
     }
 
+    @Override
     public int searchMaxElement(CurrentArray currentArray) throws ArrayException {
         int max = Integer.MIN_VALUE;
         try {
@@ -38,6 +41,7 @@ public class ArrayService {
         return max;
     }
 
+    @Override
     public CurrentArray replace(CurrentArray currentArray, int element, int replaceable) throws ArrayException {
         for (int i = 0; i < currentArray.sizeArray(); i++) {
             if (currentArray.arrayGetElement(i) == element) {
@@ -48,6 +52,7 @@ public class ArrayService {
         return currentArray;
     }
 
+    @Override
     public int sumElementsArray(CurrentArray currentArray) throws ArrayException {
         int sum = 0;
         for (int i = 0; i < currentArray.sizeArray(); i++) {
@@ -57,12 +62,14 @@ public class ArrayService {
         return sum;
     }
 
+    @Override
     public double averageElementsBy(CurrentArray currentArray) throws ArrayException {
         double average = sumElementsArray(currentArray) / currentArray.sizeArray();
         logger.log(Level.INFO,"the average of the elements of a given array is equal to "+average);
         return average;
     }
 
+    @Override
     public int countPositive(CurrentArray currentArray) throws ArrayException {
         int countPositive = 0;
         for (int i = 0; i < currentArray.sizeArray(); i++) {
@@ -75,6 +82,7 @@ public class ArrayService {
         return countPositive;
     }
 
+    @Override
     public int countNegative(CurrentArray currentArray) throws ArrayException {
         int countNegative = 0;
         for (int i = 0; i < currentArray.sizeArray(); i++) {
@@ -86,6 +94,7 @@ public class ArrayService {
         return countNegative;
     }
 
+    @Override
     public CurrentArray sortArraySelection(CurrentArray currentArray) throws ArrayException {
         for (int i = 0; i < currentArray.sizeArray(); i++) {
             for (int j = i; j < currentArray.sizeArray(); j++) {
@@ -100,6 +109,7 @@ public class ArrayService {
         return currentArray;
     }
 
+    @Override
     public CurrentArray sortArrayBubble(CurrentArray currentArray) throws ArrayException {
         boolean needIteration = true;
         while (needIteration) {
@@ -117,6 +127,7 @@ public class ArrayService {
         return currentArray;
     }
 
+    @Override
     public CurrentArray sortArrayInsertion(CurrentArray currentArray) throws ArrayException {
         for (int i = 0; i < currentArray.sizeArray(); i++) {
             int value = currentArray.arrayGetElement(i);

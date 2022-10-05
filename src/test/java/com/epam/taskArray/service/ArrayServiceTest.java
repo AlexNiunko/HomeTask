@@ -2,10 +2,9 @@ package com.epam.taskArray.service;
 
 import com.epam.taskArray.entity.CurrentArray;
 import com.epam.taskArray.exception.ArrayException;
+import com.epam.taskArray.service.impl.ArrayService;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import static org.testng.Assert.*;
 
 public class ArrayServiceTest {
 
