@@ -7,19 +7,19 @@ import com.epam.taskArray.specification.Specification;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Repository {
-    private static Repository repositoryInstance;
+public class ArrayRepository {
+    private static ArrayRepository arrayRepositoryInstance;
     private List<CurrentArray> list;
 
-    private Repository(List<CurrentArray> currentArrayList) {
+    private ArrayRepository(List<CurrentArray> currentArrayList) {
         this.list = currentArrayList;
     }
 
-    public static Repository getInstance(List<CurrentArray> currentArrayList) {
-        if (repositoryInstance == null) {
-            repositoryInstance = new Repository(currentArrayList);
+    public static ArrayRepository getInstance(List<CurrentArray> currentArrayList) {
+        if (arrayRepositoryInstance == null) {
+            arrayRepositoryInstance = new ArrayRepository(currentArrayList);
         }
-        return repositoryInstance;
+        return arrayRepositoryInstance;
     }
 
     public List<CurrentArray> query(Specification specification) throws ArrayException {
