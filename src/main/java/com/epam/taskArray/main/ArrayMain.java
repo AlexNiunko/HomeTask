@@ -4,6 +4,8 @@ import com.epam.taskArray.entity.CurrentArray;
 import com.epam.taskArray.exception.ArrayException;
 import com.epam.taskArray.listArrayCreator.ListCurrentArrayCreator;
 import com.epam.taskArray.repository.Repository;
+import com.epam.taskArray.specification.Specification;
+import com.epam.taskArray.specification.impl.SumElementIsEven;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
@@ -19,5 +21,9 @@ public class ArrayMain {
         List<CurrentArray>currentArrayList=new ArrayList<>(listCurrentArrayCreator.currentArrayList("data\\info.txt"));
         Repository repository=Repository.getInstance(currentArrayList);
         System.out.println(repository);
+        Specification specification=new SumElementIsEven();
+        List<CurrentArray>res= repository.query(specification);
+        System.out.println(res);
+
     }
 }
