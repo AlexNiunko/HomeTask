@@ -1,4 +1,4 @@
-package com.epam.taskArray.listArrayCreator;
+package com.epam.taskArray.creator;
 
 import com.epam.taskArray.entity.CurrentArray;
 import com.epam.taskArray.exception.ArrayException;

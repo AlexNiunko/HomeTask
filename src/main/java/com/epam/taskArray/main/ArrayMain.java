@@ -2,7 +2,7 @@ package com.epam.taskArray.main;
 
 import com.epam.taskArray.entity.CurrentArray;
 import com.epam.taskArray.exception.ArrayException;
-import com.epam.taskArray.listArrayCreator.ListCurrentArrayCreator;
+import com.epam.taskArray.creator.ListCurrentArrayCreator;
 import com.epam.taskArray.repository.Repository;
 import com.epam.taskArray.specification.Specification;
 import com.epam.taskArray.specification.impl.SumElementIsEven;
